@@ -1,0 +1,47 @@
+@page "/"
+<font FACE="Port Lligat Slab" SIZE=9 COLOR="black">
+<h1 align=center>CICLO III - D2.MAS - @ciclo.ToUpper() </h1>
+</font>
+
+<br>
+<div class="Container Section">
+  
+  <form>
+    
+    @*Un campo por fila*@  
+    
+    <div class="form-group row">    
+      <label for="name" class="col-form-label"> <font FACE="Port Lligat Slab" SIZE=5 COLOR="gray"><b>Nombre del Integrante </b></font></label> 
+      <input type="text" name ="name" placeholder="Escribe tu nombre completo" id="name" class=form-control>
+    </div >
+    
+    @*Dos campos en una fila*@  
+    
+    <div class="form-group row">    
+      <div class="col">
+        <label for="ciclo" class="col-form-label"><font FACE="Port Lligat Slab" SIZE=5 COLOR="gray"><b> Ciclo </b></font></label> 
+        <input type="text" name ="ciclo" placeholder="Escribe el ciclo que estas cursando" id="ciclo" class=form-control>
+      </div>
+      <div class="col">
+        <label for="num_:ciclo" class="col-form-label"><font FACE="Port Lligat Slab" SIZE=5 COLOR="gray"><b> Número Ciclo</b> </font></label> 
+        <input type="number" name ="num_ciclo" placeholder="Escribe el numero del ciclo" id="num_ciclo" class=form-control>
+      </div>
+    </div>
+  </form>
+    <br>
+
+  @*Contiene Espacio para Texto*@
+  
+  <div class="form-group row">
+    <label for="message" class="col-md-2 col-for-label"><font FACE="Port Lligat Slab" SIZE=5 COLOR="gray"><b> Comentarios </b></font></label> 
+    <div class =" col-md-10">
+      <textarea mane="message" id="message"cols="120" rows="6" placeholder ="Aqui puedes incluir tus comentarios" class form-control></textarea>
+    </div>
+</div>
+
+
+
+<font FACE="Port Lligat Slab" SIZE=8 COLOR="gray"><h1>Hasta aca va el codigo</h1></font>
+
+
+<br>
